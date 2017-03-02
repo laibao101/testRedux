@@ -8,7 +8,7 @@ const Todo = ({onClick,completed,text})=>{
 Todo.PropTypes={
 	onClick:PropTypes.func.isRequired,
 	completed:PropTypes.bool.isRequired,
-	text:PropType.string.isRequired
+	text:PropTypes.string.isRequired
 }
 
 

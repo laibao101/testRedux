@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
-import toggleTodo from '../actions';
-import TodoList from '../components/TodoList';
+import toggleTodo from '../../actions';
+import TodoList from '../../components/todoList';
 
 
 const getVisibleTodos = (todo,filter) =>{
@@ -9,7 +9,7 @@ const getVisibleTodos = (todo,filter) =>{
 			return todo;
 		case 'SHOW_ACTIVE':
 			return todo.filter(t=>!t.completed);
-		case 'SHOW_COMPLETED'：
+		case 'SHOW_COMPLETED':
 			return todo.filter(t=>t.completed);
 	}
 }
